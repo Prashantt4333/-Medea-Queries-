@@ -1,0 +1,109 @@
+
+       
+/*
+    @Media not|only mediatype and  (mediafeature and|or|not Mediafeature)
+    {
+        css:code;
+    } 
+*/
+
+@media only screen and (min-width:0px) and (max-width:500px){
+        [data-R="respo"]{
+        height: 200px ;
+        width: 100%;
+        background: red;
+        font-family: 'Silkscreen', cursive;
+        font-size: 1em;
+    } 
+    h1{
+        animation: transform 0.5s ease-in infinite alternate;
+    }
+    @keyframes transform {
+        0%{
+            transform: translate(0px,0px);
+        }
+        100%{
+            transform: translate(0px,160px);
+        }
+    }
+
+}
+@media only screen and (min-width:501px) and (max-width:900px){
+    [data-R="respo"]{
+        height: 200px ;
+        width: 100%;
+        background: green;
+        font-family: 'Fuzzy Bubbles', cursive;
+        font-size: 1em;
+    } 
+    h1{
+       
+        animation: transform 2s ease-in infinite alternate;
+    }
+    @keyframes transform {
+        0%{
+            transform: scale(1) translate(0px,0px);
+        }
+        50%{
+            transform: scale(0.5) translate(0px,100px);
+        }
+        100%{
+            transform: scale(1) translate(0px,160px);
+        }
+        
+    }
+
+}
+@media only screen and (min-width:901px) and (max-width:1400px){
+        [data-R="respo"]{
+        height: 200px ;
+        width: 100%;
+        background: yellow ;
+        font-family: 'Righteous', cursive;
+        font-size: 1em;
+    } 
+    h1{
+       
+        animation: transform 1s ease-in infinite alternate;
+       
+    }
+    @keyframes transform {
+        0%{
+           transform: translate(0px);
+        }
+        100%{
+            transform: translate(500px);
+        }
+    }
+
+}
+@media only screen and (min-width:1401px) and (max-width:2000px){
+    [data-R="respo"]{
+        height:700px ;
+        width: 100%;
+        background: purple;
+        font-family: 'Fuzzy Bubbles', cursive;
+        font-size: 1em;
+        color: #fff;
+        position: relative;
+    } 
+    h1{
+        margin-left: 25%;
+        position: absolute;
+        top: 200px;
+        animation: transform 2s linear alternate  infinite;
+        transform-origin:bottom left ;
+        
+
+    }
+    @keyframes transform {
+        0%{
+           transform: scale(1);
+
+        }
+        100%{
+           transform:scale(2) ; 
+           color: gold;
+        }
+    }
+}
